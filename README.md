@@ -1,6 +1,6 @@
 # Playlio
 
-![대문](client/public/assets/ProjectImage.jpg)
+![테스트](client/public/assets/ProjectImage.jpg)
 
 ## 소개
 
