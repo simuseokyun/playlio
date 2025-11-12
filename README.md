@@ -22,11 +22,20 @@
 
 ## 핵심 기능
 
-- Spotify OAuth 로그인 연동
-- 사용자 정보 및 플레이리스트 조회
-- 특정 트랙, 앨범, 아티스트 검색
-- 플레이리스트 내 트랙 목록 보기
-- 반응형 디자인
+### Non-Member (로그인 하지 않은 유저)
+
+- 트랙,앨범,아티스트 검색기능
+- 음악 스트리밍 (플레이어 조작 가능)
+
+### 0AUTH
+
+- OAuth2.0을 이용해 간편하고 안전한 소셜 로그인 (google 계정으로 회원가입, 로그인)
+
+### Member (로그인 한 유저)
+
+- 플레이리스트 조회,생성,삭제 기능
+- 플레이리스트 내 트랙 추가,삭제 기능
+- 아티스트/앨범 팔로우 및 언팔로우
 
 ## 기술 스택
 
@@ -50,15 +59,29 @@
 
 ## 프로젝트 구조
 
-- **React** – 사용자 인터페이스 개발
-- **typescript** – 음악 관련 데이터 제공
-- **tailWind** – CSS
-- **TanStack Query (React Query)** – 비동기 데이터 패칭 및 서버 상태 관리
-- **Zustand** – 전역 상태 관리
-- **Spotify Web API** – 음악 관련 데이터 제공
-- **Spotify_Preview_Finder** – 노래 30초 미리듣기
-- **React-hook-form** – 폼 상태 관리 및 유효성 검사 라이브러리
-- **Express** – Node.js 기반의 웹 서버 프레임워크
+```bash
+client/
+└── src/
+    ├── components/            # Spotify, 사용자 등 API 요청
+    ├── hooks/     # 재사용 UI 컴포넌트
+    ├── pages/          # 커스텀 훅
+    ├── routes/          # 페이지 컴포넌트
+    ├── services/          # Zustand 전역 상태 관리
+    ├── store/         # 전역 스타일 또는 Tailwind 설정
+    ├── styles/
+    ├── types/
+    └── utils/
+```
+
+```bash
+server/
+└── src/
+    ├── errors/            # Spotify, 사용자 등 API 요청
+    ├── routes/     # 재사용 UI 컴포넌트
+    ├── tuils/          # 커스텀 훅
+    └── types/        # 페이지 컴포넌트
+
+```
 
 ## 주요 기능
 
@@ -69,14 +92,3 @@
 - 반응형 디자인
 
 ## 프로젝트 구조
-
-```bash
-src/
-├── api/            # Spotify API 요청 함수
-├── components/     # 재사용 가능한 UI 컴포넌트
-├── hooks/          # 커스텀 훅
-├── pages/          # 페이지 컴포넌트
-├── store/          # Zustand를 활용한 전역 상태 관리
-└── styles/         # 전역 스타일 또는 Tailwind 설정 파일
-└── utils/          # 공통 유틸 함수 및 헬퍼 로직
-```
