@@ -2,10 +2,10 @@
 
 ![로고](client/public/assets/ProjectImage.jpg)
 
-<p align="center">
-  <a href="https://simseokyun.info">배포 사이트 : [Playlio]</a><br>
-  <a href="https://portfolio-eight-psi-6a8jy4r1fa.vercel.app/project/1">자세한 프로젝트 설명[설명]</a>
-</p>
+<div align="center">
+  <p>배포 사이트 : <a href="https://simseokyun.info">[Playlio]</a></p><br>
+  <p>자세한 프로젝트 설명 : <a href="https://portfolio-eight-psi-6a8jy4r1fa.vercel.app/project/1">[설명]</a></p>
+</div>
 
 ## 목차
 
@@ -99,20 +99,23 @@ server/
 ## 프로젝트 설치
 
 ```bash
-# 레포지토리 클론
 git clone https://github.com/username/project.git
+```
 
 # 의존성 설치
-npm install
 
-# 개발 서버 실행
+```bash
+npm install
+```
+
+# 서버 실행
+
+```bash
 npm run dev
 ```
 
-### 프로젝트 클론
+# 클라이언트 실행
 
-### 의존성 설치
-
-### 서버 실행
-
-### 클라이언트 실행
+```bash
+npm start
+```
