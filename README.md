@@ -1,6 +1,6 @@
 # Playlio
 
-![테스트](client/public/assets/ProjectImage.jpg)
+![로고](client/public/assets/ProjectImage.jpg)
 
 ## 목차
 
@@ -12,7 +12,8 @@
 
 ## 프로젝트 소개
 
-![테스트](client/public/assets/MainPage.png)
+![메인 화면](client/public/assets/MainPage.png)
+
 이 프로젝트는 **Spotify Web API**를 활용해 사용자의 음악 데이터를 시각화하고,플레이리스트,아티스트 정보 등을 제공하고 짧게나마 음악을 스트리밍할 수 있는 React 기반 웹 애플리케이션입니다.
 
 ## 기획 의도
@@ -28,6 +29,24 @@
 - 반응형 디자인
 
 ## 기술 스택
+
+### Front-End
+
+- React
+- React-Router
+- Tanstack-Query
+- Tailwind
+- Typescript
+- Zustand
+
+### Back-End
+
+- Node.js
+- Express
+
+### Deployment
+
+- AWS(EC2)
 
 ## 프로젝트 구조
 
