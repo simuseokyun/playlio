@@ -3,7 +3,7 @@
 ![로고](client/public/assets/ProjectImage.jpg)
 
 <p align="center">
-  <a href="https://simseokyun.info">[배포 사이트 링크]</a>
+  <a href="https://simseokyun.info">[배포 사이트 링크]</a><br>
   <a href="https://portfolio-eight-psi-6a8jy4r1fa.vercel.app/project/2">[자세한 프로젝트 설명]</a>
 </p>
 
