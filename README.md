@@ -1,4 +1,6 @@
-# Music-stream
+# Playlio
+
+![로고](assets/logo.png)
 
 ## 소개
 
