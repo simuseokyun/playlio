@@ -2,7 +2,9 @@
 
 ![로고](client/public/assets/ProjectImage.jpg)
 
-### 배포 사이트 : [Link](https://simseokyun.info)
+<p align="center">
+  <a href="https://simseokyun.info">[배포 사이트 링크]</a>
+</p>
 
 ## 목차
 
