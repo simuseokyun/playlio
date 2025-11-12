@@ -1,6 +1,7 @@
 # Playlio
 
 ![로고](client/public/assets/ProjectImage.jpg)
+배포 사이트 : [Link](https://simseokyun.info)
 
 ## 목차
 
@@ -15,7 +16,6 @@
 ![메인 화면](client/public/assets/MainPage.png)
 
 이 프로젝트는 **Spotify Web API**를 활용해 사용자의 음악 데이터를 시각화하고,플레이리스트,아티스트 정보 등을 제공하고 짧게나마 음악을 스트리밍할 수 있는 React 기반 웹 애플리케이션입니다.
-[Playlio 배포주소](https://simseokyun.info)
 
 ## 기획 의도
 
