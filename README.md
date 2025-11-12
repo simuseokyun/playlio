@@ -1,7 +1,8 @@
 # Playlio
 
 ![로고](client/public/assets/ProjectImage.jpg)
-배포 사이트 : [Link](https://simseokyun.info)
+
+### 배포 사이트 : [Link](https://simseokyun.info)
 
 ## 목차
 
