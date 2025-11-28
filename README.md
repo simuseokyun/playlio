@@ -115,7 +115,19 @@ cd client
 npm install
 
 # 서버
-cd server
+cd ../server
+npm install
+```
+
+### 환경 변수 설정
+
+```bash
+# 클라이언트
+cd client
+npm install
+
+# 서버
+cd ../server
 npm install
 ```
 
