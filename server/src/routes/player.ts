@@ -11,9 +11,9 @@ const playerRoute: CustomRoute[] = [
                 const { title } = query;
                 const { id } = body;
                 if (!title || !id) return res.status(400).json({ message: '곡 정보를 찾을 수 없습니다' });
-                console.time('spotify');
+
                 const data = await spotifyPreviewFinder(title as string, 20);
-                console.timeEnd('spotify');
+
                 const trackInfo = data?.results.find((track: { spotifyUrl: string }) => {
                     const urlParts = track.spotifyUrl.split('/');
                     const trackId = urlParts[urlParts.length - 1];

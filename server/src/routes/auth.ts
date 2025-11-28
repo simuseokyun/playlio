@@ -16,7 +16,7 @@ const authRoute: CustomRoute[] = [
                     client_id: CLIENT_ID,
                     client_secret: CLIENT_SECRET,
                 });
-                console.log(BASE_URL_AUTH);
+
                 const response = await axios.post(`${BASE_URL_AUTH}/api/token`, params.toString(), {
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',

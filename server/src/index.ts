@@ -19,7 +19,6 @@ import artistRoute from './routes/artist';
 const app = express();
 const allowedOrigin = process.env.NODE_ENV === 'production' ? 'https://simseokyun.info' : 'http://localhost:3000';
 
-console.log('허용 : ' + allowedOrigin);
 app.use(
     cors({
         origin: allowedOrigin,
@@ -41,7 +40,6 @@ const routes: CustomRoute[] = [
 ];
 
 routes.forEach(({ method, route, handler }) => {
-    console.log('등록된 라우터:', method, route);
     app[method](route, handler);
 });
 
@@ -52,7 +50,6 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.join(clientPath, 'index.html'));
     });
 } else {
-    console.log('개발 모드');
 }
 
 export const errorMessages: ErrorMessages = {
@@ -62,6 +59,4 @@ export const errorMessages: ErrorMessages = {
     500: '네트워크 에러입니다',
 };
 
-app.listen(8000, '0.0.0.0', () => {
-    console.log(`서버 실행 : ${process.env.NODE_ENV}`);
-});
+app.listen(8001, '0.0.0.0', () => {});
