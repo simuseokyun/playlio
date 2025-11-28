@@ -24,7 +24,7 @@
 
 ## 기획 의도
 
-공개 API를 활용한 실질적인 서비스 구축 경험을 목표로 프로젝트를 기획했습니다. 특히, 음악에 대한 개인적인 관심을 바탕으로, 스트리밍 기능을 포함한 음악 애플리케이션을 직접 구현함으로써 프론트엔드와 백엔드 기술을 유기적으로 결합해보는 데 중점을 두었습니다.이를 통해 사용자 인증, 데이터 처리, 상태 관리 등 실제 서비스에서 요구되는 다양한 기능을 경험할 수 있었고, 직관적인 UI/UX 설계와 반응형 디자인 적용을 통해 사용자가 편리하게 서비스를 이용할 수 있도록 고민했습니다..
+공개 API를 활용한 실질적인 서비스 구축 경험을 목표로 프로젝트를 기획했습니다. 특히, 음악에 대한 개인적인 관심을 바탕으로, 스트리밍 기능을 포함한 음악 애플리케이션을 직접 구현함으로써 프론트엔드와 백엔드 기술을 유기적으로 결합해보는 데 중점을 두었습니다.이를 통해 사용자 인증, 데이터 처리, 상태 관리 등 실제 서비스에서 요구되는 다양한 기능을 경험할 수 있었고, 직관적인 UI/UX 설계와 반응형 디자인 적용을 통해 사용자가 편리하게 서비스를 이용할 수 있도록 고민했습니다.
 
 ## 핵심 기능
 
@@ -73,15 +73,15 @@
 ```bash
 client/
 └── src/
-    ├── components/            # Spotify, 사용자 등 API 요청
-    ├── hooks/     # 재사용 UI 컴포넌트
-    ├── pages/          # 커스텀 훅
-    ├── routes/          # 페이지 컴포넌트
-    ├── services/          # Zustand 전역 상태 관리
-    ├── store/         # 전역 스타일 또는 Tailwind 설정
-    ├── styles/
-    ├── types/
-    └── utils/
+    ├── components/   # 재사용 가능한 UI 컴포넌트 모음 (버튼, 카드, 모달 등)
+    ├── hooks/        # 커스텀 훅 정의 (로직 재사용용)
+    ├── pages/        # Next.js 페이지 컴포넌트
+    ├── routes/       # 라우팅 관련 설정 또는 인터셉팅 라우트 구현
+    ├── services/     # API 요청 함수, 비즈니스 로직 등 서비스 레이어
+    ├── store/        # Zustand를 활용한 전역 상태 관리
+    ├── styles/       # 전역 스타일, Tailwind 설정, CSS 모듈 등
+    ├── types/        # TypeScript 타입 정의
+    └── utils/        # 유틸리티 함수, 상수, 헬퍼 함수 등
 ```
 
 ### 서버
@@ -89,21 +89,33 @@ client/
 ```bash
 server/
 └── src/
-    ├── errors/            # Spotify, 사용자 등 API 요청
-    ├── routes/     # 재사용 UI 컴포넌트
-    ├── tuils/          # 커스텀 훅
-    └── types/        # 페이지 컴포넌트
+    ├── errors/   # 에러 처리 관련 로직, 커스텀 에러 클래스 및 핸들러
+    ├── routes/   # API 엔드포인트 정의 (Express 라우터 등)
+    ├── utils/    # 유틸리티 함수, 헬퍼 함수, 공통 로직
+    └── types/    # TypeScript 타입 정의
 ```
 
 ## 프로젝트 설치
 
 ```bash
-git clone https://github.com/username/project.git
+git clone https://github.com/simuseokyun/playlio.git
+```
+
+## 프로젝트 이동
+
+```bash
+cd playlio
 ```
 
 ### 의존성 설치
 
 ```bash
+# 클라이언트
+cd client
+npm install
+
+# 서버
+cd server
 npm install
 ```
 
