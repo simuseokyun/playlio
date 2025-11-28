@@ -119,16 +119,22 @@ cd ../server
 npm install
 ```
 
-### 환경 변수 설정
+### 환경 변수 설정 (서버와 클라이언트 각각 .env.development 파일 생성)
 
 ```bash
 # 클라이언트
-cd client
-npm install
+VITE_CLIENT_ID=Spotify CLIENT ID(본인 발급)
+VITE_REDIRECT_URI=http://localhost:3000
+VITE_API_URL=http://localhost:8000
+
 
 # 서버
-cd ../server
-npm install
+.env.development 파일 생성
+SPOTIFY_CLIENT_ID=Spotify CLIENT ID(본인 발급)
+SPOTIFY_CLIENT_SECRET=Spotify CLIENT SECRET(본인 발급)
+REDIRECT_URI=http://localhost:3000
+BASE_URL_AUTH=https://accounts.spotify.com
+BASE_URL_API=https://api.spotify.com
 ```
 
 ### 서버 실행
